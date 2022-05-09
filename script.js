@@ -1,8 +1,8 @@
 function copiar_texto() {
     var texto = document.getElementById('resultado');
-    var contenido =texto.value;
+    var contenido = texto.value;
     texto.select();
-    texto.setSelectionRange(1,contenido.length-1);
+    texto.setSelectionRange(1, contenido.length - 1);
     document.execCommand('copy');
 
 }
@@ -27,16 +27,31 @@ function encriptar() {
             case "e":
                 arreglo[i] = "enter"
                 break;
+            case "é":
+                arreglo[i] = "enter"
+                break;
             case "i":
+                arreglo[i] = "imes"
+                break;
+            case "í":
                 arreglo[i] = "imes"
                 break;
             case "a":
                 arreglo[i] = "ai"
                 break;
+            case "á":
+                arreglo[i] = "ai"
+                break;
             case "o":
                 arreglo[i] = "ober"
                 break;
+            case "ó":
+                arreglo[i] = "ober"
+                break;
             case "u":
+                arreglo[i] = "ufat"
+                break;
+            case "ú":
                 arreglo[i] = "ufat"
                 break;
 
